@@ -27,3 +27,25 @@ document.write("Iam In Page");
 */
 // Assignment 5
 console.table(["One", "Two", "Three", "Four", "Five"]);
+
+// Assignment 6
+
+console.group("Group 1");
+console.log("message 1");
+console.log("message 2");
+
+console.group("child group"),
+	console.log("message 1"),
+    console.log("message 2"),
+    
+	console.group("grand child group"),
+	console.log("message 1"),
+	console.log("message 2");
+
+console.groupEnd();
+console.groupEnd();
+console.groupEnd();
+
+console.group("Group 2");
+console.log("message 1");
+console.log("message 2");
