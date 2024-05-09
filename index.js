@@ -15,3 +15,6 @@ console.log(
 	"color:green; font-size: 40px; font-weight:bold",
 	"color:white; background:blue; font-size: 40px;"
 );
+
+// Assignment 5
+console.table(["One", "Two", "Three", "Four", "Five"]);
