@@ -16,5 +16,14 @@ console.log(
 	"color:white; background:blue; font-size: 40px;"
 );
 
+// Assignment 4 undo execution of the code without deleting it:
+// first method: single line comment
+// console.log("Iam In Console");
+// document.write("Iam In Page");
+// Second method multi ligne comment
+/*
+console.log("Iam In Console");
+document.write("Iam In Page");
+*/
 // Assignment 5
 console.table(["One", "Two", "Three", "Four", "Five"]);
