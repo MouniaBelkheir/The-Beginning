@@ -73,3 +73,7 @@ let container = `<div>
 <span>${theDate}</span>
 </div> `;
 document.write(container.repeat(4))
+
+//? Assignment 02
+console.log(elzero.innerHTML); // object
+console.log(typeof elzero); // object
