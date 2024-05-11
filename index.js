@@ -72,11 +72,19 @@ let container = `<div>
 <p>${theDesc}</p>
 <span>${theDate}</span>
 </div> `;
-document.write(container.repeat(4))
+document.write(container.repeat(4));
 
 //? Assignment 02
 console.log(elzero.innerHTML); // object
 console.log(typeof elzero); // object
 
 //? Assignment 03
-console.log("\`I'm In \n \\\\ \nLove \\\\\"\"\"\'\'\' \n ++ With ++ \n \\\"\"\"\\\"\"\" \n \"\"JavaScript\"\"\`\`")
+console.log(
+    '`I\'m In \n \\\\ \nLove \\\\"""\'\'\' \n ++ With ++ \n \\"""\\""" \n ""JavaScript""``'
+);
+
+//? Assignment 04
+let a = 21;
+let b = 20;
+
+console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}`); // _21_2021_2021_2021_20_
