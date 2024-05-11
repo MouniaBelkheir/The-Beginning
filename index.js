@@ -56,8 +56,20 @@ console.log("message 2");
 let numberOne = 10,
 	numberTwo = 20;
 console.log(`${numberOne}${numberTwo}`);
+console.log(numberOne + "\n" + numberTwo);
+console.log(numberOne, numberTwo);
 console.log(typeof `${numberOne}${numberTwo}`);
 console.log(`${numberOne}
 ${numberTwo}`);
 
+// !challenge
 
+let theTitle = "El Zero",
+	theDesc = "El zero web school",
+	theDate = "25/10";
+let container = `<div>
+<h3>Hello ${theTitle}</h3>
+<p>${theDesc}</p>
+<span>${theDate}</span>
+</div> `;
+document.write(container.repeat(4))
