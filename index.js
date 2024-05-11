@@ -77,3 +77,6 @@ document.write(container.repeat(4))
 //? Assignment 02
 console.log(elzero.innerHTML); // object
 console.log(typeof elzero); // object
+
+//? Assignment 03
+console.log("\`I'm In \n \\\\ \nLove \\\\\"\"\"\'\'\' \n ++ With ++ \n \\\"\"\"\\\"\"\" \n \"\"JavaScript\"\"\`\`")
