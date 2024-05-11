@@ -11,10 +11,10 @@ document.getElementById("el").style.cssText =
 //? Assignment 3
 //See the console
 console.log(
-	"%cElzero %cWeb %cSchool",
+	"%cHello %cBeatiful %cMounia",
 	"color:red; font-size: 40px;",
 	"color:green; font-size: 40px; font-weight:bold",
-	"color:white; background:blue; font-size: 40px;"
+	"color:white; background:pink; font-size: 40px;"
 );
 
 //? Assignment 4 undo execution of the code without deleting it:
@@ -37,8 +37,7 @@ console.log("message 2");
 
 console.group("child group"),
 	console.log("message 1"),
-    console.log("message 2"),
-    
+	console.log("message 2"),
 	console.group("grand child group"),
 	console.log("message 1"),
 	console.log("message 2");
@@ -52,8 +51,13 @@ console.log("message 1");
 console.log("message 2");
 
 //* Lessons 10 - 17
-
+// ! Data Types
 //? Assignement 01
-let numberOne = 10;
-let numberTwo = 20
-console.log(`number`numberOne,numberTwo)
+let numberOne = 10,
+	numberTwo = 20;
+console.log(`${numberOne}${numberTwo}`);
+console.log(typeof `${numberOne}${numberTwo}`);
+console.log(`${numberOne}
+${numberTwo}`);
+
+
