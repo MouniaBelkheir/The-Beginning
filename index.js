@@ -80,12 +80,77 @@ console.log(typeof elzero); // object
 
 //? Assignment 03
 console.log(
-    '`I\'m In \n \\\\ \nLove \\\\"""\'\'\' \n ++ With ++ \n \\"""\\""" \n ""JavaScript""``'
+	'`I\'m In \n \\\\ \nLove \\\\"""\'\'\' \n ++ With ++ \n \\"""\\""" \n ""JavaScript""``'
 );
 
 //? Assignment 04
-let a = 21;
-let b = 20;
+// let a = 21;
+// let b = 20;
 
-console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}`); // _21_2021_2021_2021_20_
-console.log(`_`+`${a}_${b}`.repeat(4))
+// console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}`); // _21_2021_2021_2021_20_
+// console.log("_" + `${a}_${b}`.repeat(4));
+
+// !Challenge 01
+let a = 10;
+let b = "20";
+let c = 80;
+// console.log(++a + +b++ + +c++ - +a++);
+/*
+    ?[++a]
+     *   Value = 11
+      $  Explain = pre-increment operator
+
+    ?[+] = "addition operater"
+
+    ?[+b++]
+     *   Value = 20;
+      $  Explain = first unary plus operator convert the value from string to number, then post-increment increase the value by 1 to be 21 but not used
+    
+    ?[+] = "addition operater"
+
+    ?[+c++]
+     *   Value = 80;
+      $  Explain = unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 81 but not used
+
+    ?[-] = subtraction operater
+
+    ?[+a++]
+     *   Value = 11;
+      $  Explain = Unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 12 but not used
+
+    !so, the total value = 11 + 20 + 80 - 11 = 100
+
+*/
+// console.log(++a + -b + +c++ - -a++ + +a);
+/*
+*let a = 10;
+*let b = "20";
+*let c = 80;
+   ? [++a] 
+    *    Value = 11
+     $   Explain = pre-increment operator
+     ?-[-a++]
+     * Value = 11
+    $ Explain = - -a++ (-)*(-)(11) = +11, +1 is not used
+     ?[+a]
+     * Value = 12
+     $ Explain = now a=12 because a++ is used
+       
+    ?[+] = "addition operater"
+    ?[-b]
+     *   Value = -20;
+      $  Explain = unary subtraction operator convert the value from string to negative number
+        ?[+] = "addition operater"
+        ?[+c++]
+     *   Value = 80;
+      $  Explain = unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 81 but not used
+    ?[-] = subtraction operater
+ ?[+] = "addition operater"
+ ? [-b]
+ * Value = -20
+ $ Explain = string became number because of unary subtraction
+ ? [+c++]
+ * Value = 80
+ $ Explain = number (++) is not used
+    ! so, the total value = 11 - 20 + 80 + 11 + 12
+*/
