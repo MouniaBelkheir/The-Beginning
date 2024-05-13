@@ -238,4 +238,18 @@ console.log(+flt.toFixed()); // 10
 console.log(Math.trunc(flt)); // 10
 
 //! Assignment 07
-console.log((Math.random()*4).toFixed()); // 0 || 1 || 2 || 3 || 4
+console.log(Number((Math.random() * 4).toFixed())); // 0 || 1 || 2 || 3 || 4
+
+//$ Lessons 27 - 30
+//? String Challenge
+let t = "Elzero Web School";
+
+console.log(t.charAt(2).toUpperCase() + t.slice(3, 6)); //Zero //* Slice CharAt
+console.log(t.charAt(13).toUpperCase().repeat(8)); // H*8
+console.log(t.split(" ", 1)); // [Elzero]
+console.log(`${t.substr(0, 6)} ${t.substr(11)}`); // Elzero school substr + template litteral
+console.log(
+	`${t[0].toLowerCase()}${t.slice(1, -1).toUpperCase()}${t[
+		t.length - 1
+	].toLowerCase()}`
+); // eLZERO WEB SCHOOl // first and last index lowerCase, Dynamic solution
