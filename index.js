@@ -89,6 +89,7 @@ console.log(
 
 // console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}`); // _21_2021_2021_2021_20_
 // console.log("_" + `${a}_${b}`.repeat(4));
+//* Lessons 18 - 22
 
 // !Challenge 01
 let a = 10;
@@ -174,6 +175,43 @@ console.log(num++ + --num); // 6
 console.log(num + num); // 6
 
 // Soultion Three
-console.log(++num + num - num-- + num--  + num-- - num-- - ++num - num ); // 6
+// console.log(++num + num - num-- + num-- + num-- - num-- - ++num - num); // 6
+// Solution Four
+console.log(num * num - num); // 6
+//$ Lessons 23 - 26
+//? Challenge
+let m = 1_00;
+let n = 2_00.5;
+let o = 1e2;
+let p = 2.4;
+//* Smallest number and return Integer
+console.log(Math.trunc(Math.min(m, n, o, p)));
+//* Use m + p One time
+console.log(Math.pow(m, Math.trunc(p))); //10000
+// 100e2
+//* Get Integer from p in 4 diff. ways
+console.log(Math.trunc(p));
+console.log(Math.floor(p));
+console.log(Math.round(p));
+console.log(parseInt(p));
+//* Use n, p to get:
+console.log(((parseInt(n) / Math.ceil(p)).toFixed(2)).toString()); //66.67 => String
+console.log(Math.round(parseInt(n) / Math.ceil(p))); // 67 => Number
+    
+//! Assignment 01
+// Examples
+// console.log(100_000); // 100000
+// console.log(100000); // 100000
+// console.log(5e4 + 5e4); // 100000
 
-
+// Your Solutions
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
+console.log(); // 100000
