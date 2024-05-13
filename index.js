@@ -160,4 +160,20 @@ let e = "20";
 let f = 30;
 let g = true;
 // *console.log(-d * e); //2000
-console.log(++e * ++g + ++f - d ); //173
+//* console.log(++e * ++g + ++f - d ); //173
+// !Assignment 01
+// Replace ? With Arithmetic Operators
+console.log(10 - (((20 * 15) / 3) * 190) / 10 / 400); // 0
+// ! Assignment 02
+let num = 3;
+
+// Solution One
+console.log(num++ + --num); // 6
+
+// Solution Two
+console.log(num + num); // 6
+
+// Soultion Three
+console.log(++num + num - num-- + num--  + num-- - num-- - ++num - num ); // 6
+
+
