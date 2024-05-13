@@ -215,3 +215,27 @@ console.log(Math.trunc(100000.55)); // 100000
 console.log(Number("100000")); // 100000
 console.log(Math.floor(100000.99)); // 100000
 console.log(Math.round(99999.99)); // 100000
+//! Assignment 02
+console.log(-Number.MIN_SAFE_INTEGER); // 9007199254740991
+//! Assignment 03
+console.log(Number.MAX_SAFE_INTEGER.toString().length); // 16
+//! Assignment 04
+let myVar = "100.56789 Views";
+
+console.log(parseInt(myVar)); // 100 Number
+console.log(Number(parseFloat(myVar).toFixed(2))); // 100.57 Number
+//! Assignment 05
+let num_ = 10;
+console.log(num_.toString().length); // 2
+
+//! Assignment 06
+let flt = 10.4;
+
+console.log(Math.floor(flt)); // 10
+console.log(Math.round(flt)); // 10
+console.log(parseInt(flt)); // 10
+console.log(+flt.toFixed()); // 10
+console.log(Math.trunc(flt)); // 10
+
+//! Assignment 07
+console.log((Math.random()*4).toFixed()); // 0 || 1 || 2 || 3 || 4
