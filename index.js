@@ -195,23 +195,23 @@ console.log(Math.floor(p));
 console.log(Math.round(p));
 console.log(parseInt(p));
 //* Use n, p to get:
-console.log(((parseInt(n) / Math.ceil(p)).toFixed(2)).toString()); //66.67 => String
+console.log((parseInt(n) / Math.ceil(p)).toFixed(2).toString()); //66.67 => String
 console.log(Math.round(parseInt(n) / Math.ceil(p))); // 67 => Number
-    
+
 //! Assignment 01
 // Examples
-// console.log(100_000); // 100000
-// console.log(100000); // 100000
-// console.log(5e4 + 5e4); // 100000
+console.log(100_000); // 100000
+console.log(100000); // 100000
+console.log(5e4 + 5e4); // 100000
 
 // Your Solutions
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
-console.log(); // 100000
+console.log(1e5); // 100000
+console.log(Math.pow(10, 5)); // 100000
+console.log(Math.ceil(99999.99)); // 100000
+console.log(Number((99999.999).toFixed())); // 100000
+console.log(Math.floor(100000.01)); // 100000
+console.log(parseInt(100000.55)); // 100000
+console.log(Math.trunc(100000.55)); // 100000
+console.log(Number("100000")); // 100000
+console.log(Math.floor(100000.99)); // 100000
+console.log(Math.round(99999.99)); // 100000
