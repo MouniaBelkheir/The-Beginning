@@ -57,16 +57,34 @@ num < 10
 	? console.log(num)
 	: "";
 // ! Assignment 02
-let num1 = 4;
-let str = false;
-let str2 = 5;
+let num1 = "105";
+let str = "10";
+let str2 = "5";
 
 if (num1 === str) {
 	console.log(`${num1} Is The Same Value As ${str}`);
 } else if (num1 == str) {
 	console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
-} else if (num1 !== str2) {
+} else if (num1 != str2 && typeof num1 != typeof str2) {
 	console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
-} else if (typeof str === typeof str2) {
+} else if (str !== str2 && typeof str === typeof str2) {
 	console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
 }
+//! Assignment 03
+let num_1 = "20";
+let num_2 = "30";
+let num_3 = 30;
+if (num_3 > num_1 && typeof num_3 !== typeof num_2) {
+	console.log(
+		"30 Is Larger Than 10 And Type string Not The Same Type As number"
+	);
+} else if (num_3 > num_1 && num_3 == num_2 && typeof num_3 !== typeof num_2) {
+	console.log(
+		"30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
+	);
+} else if (num_3 !== num_1 && typeof num_3 !== typeof num_2) {
+	console.log(
+		`${num_3} Value And Type Is Not The Same As ${num_1} And Type Is Not The Same As ${num_2}`
+	);
+}
+// Needed Output
