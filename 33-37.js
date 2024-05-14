@@ -41,6 +41,18 @@ if (st[0] !== "string") {
 if ((typeof st.indexOf("W")).toString() === "number") {
 	console.log("Good");
 }
-if (st.split(" ",1).toString().repeat(2) === "ElzeroElzero") {
+if (st.split(" ", 1).toString().repeat(2) === "ElzeroElzero") {
 	console.log("Good");
 }
+// //! Assignment 01
+//* إذا كان الرقم أصغر من 10 قم بطباعة الرقم وقبله صفرين
+//* إذا كان الرقم أكبر من 10 وأصغر من 100 قم بطباعة الرقم وقبله صفر
+//* إذا كان الرقم أكبر من أو يساوي 100 قم بطباعة الرقم كما هو
+let num = 20;
+num < 10
+	? console.log(`00${num}`)
+	: num > 10 && num < 100
+	? console.log(`0${num}`)
+	: num >= 100
+	? console.log(num)
+	: "";
