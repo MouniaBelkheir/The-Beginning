@@ -56,3 +56,17 @@ num < 10
 	: num >= 100
 	? console.log(num)
 	: "";
+// ! Assignment 02
+let num1 = 4;
+let str = false;
+let str2 = 5;
+
+if (num1 === str) {
+	console.log(`${num1} Is The Same Value As ${str}`);
+} else if (num1 == str) {
+	console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
+} else if (num1 !== str2) {
+	console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
+} else if (typeof str === typeof str2) {
+	console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
+}
