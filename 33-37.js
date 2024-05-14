@@ -57,19 +57,19 @@ num < 10
 	? console.log(num)
 	: "";
 // ! Assignment 02
-let num1 = "105";
-let str = "10";
-let str2 = "5";
+// let num1 = "105";
+// let str = "10";
+// let str2 = "5";
 
-if (num1 === str) {
-	console.log(`${num1} Is The Same Value As ${str}`);
-} else if (num1 == str) {
-	console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
-} else if (num1 != str2 && typeof num1 != typeof str2) {
-	console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
-} else if (str !== str2 && typeof str === typeof str2) {
-	console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
-}
+// if (num1 === str) {
+// 	console.log(`${num1} Is The Same Value As ${str}`);
+// } else if (num1 == str) {
+// 	console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
+// } else if (num1 != str2 && typeof num1 != typeof str2) {
+// 	console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
+// } else if (str !== str2 && typeof str === typeof str2) {
+// 	console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
+// }
 //! Assignment 03
 let num_1 = "20";
 let num_2 = "30";
@@ -87,4 +87,55 @@ if (num_3 > num_1 && typeof num_3 !== typeof num_2) {
 		`${num_3} Value And Type Is Not The Same As ${num_1} And Type Is Not The Same As ${num_2}`
 	);
 }
-// Needed Output
+//! Assignment 04
+// Edit What You Want Here
+let num1 = 11;
+let num2 = 10;
+let num3 = 11;
+let num4 = 33;
+// Condition 1
+if (num1 > num2) {
+	console.log("True");
+} else {
+	console.log("False");
+}
+// Condition 2
+if (num1 > num2 && num1 < num4) {
+	console.log("True");
+} else {
+	console.log("False");
+}
+// Condition 3
+if (num1 > num2 && num1 === num3) {
+	console.log("True");
+} else {
+	console.log("False");
+}
+// Condition 4
+if (num1 + num2 < num4) {
+	console.log("True");
+} else {
+	console.log("False");
+}
+// Condition 5
+if (num1 + num3 < num4) {
+	console.log("True");
+} else {
+	console.log("False");
+}
+
+// Condition 6
+
+if (num1 + num2 + num3 < num4) {
+	console.log("True");
+} else {
+	console.log("False");
+}
+
+// Condition 7
+
+if (num4 - (num1 + num3) + num2 === 21) {
+	console.log("True");
+} else {
+	console.log("False");
+}
