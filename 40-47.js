@@ -74,3 +74,10 @@ let allArrs = [];
 // Your Code Here
 allArrs = arr2.slice(2,3).toString().toLowerCase() + arr1.pop().toLowerCase() +arr2.pop().toLowerCase()
 console.log(allArrs); // fxy
+function fun() {
+  let num = 5
+  if (num === "5") return  true
+  else return false
+}
+
+console.log(fun())
