@@ -65,3 +65,12 @@ if (haystack.slice(1, 2) == needle) {
 }
 // //$ Solution 03
 haystack.splice(1, 1) == needle ? console.log("Found") : console.log("missing");
+//! Assignment 06
+//$ No numbers
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+
+// Your Code Here
+allArrs = arr2.slice(2,3).toString().toLowerCase() + arr1.pop().toLowerCase() +arr2.pop().toLowerCase()
+console.log(allArrs); // fxy
