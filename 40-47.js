@@ -50,3 +50,18 @@ console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
 let website = "Go";
 let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
 console.log(words[website.length][0].slice(website.length).toUpperCase()); // ZERO
+//! Assignment 05
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+
+// Write 3 Solutions
+// //$ Solution 01
+haystack.includes(needle) ? console.log("Found") : console.log("missing");
+// //$ Solution 02
+if (haystack.slice(1, 2) == needle) {
+	console.log("Found");
+} else {
+	console.log("missing");
+}
+// //$ Solution 03
+haystack.splice(1, 1) == needle ? console.log("Found") : console.log("missing");
