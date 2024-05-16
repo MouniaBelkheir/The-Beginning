@@ -36,3 +36,12 @@ let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
 console.log(friends.shift())
 console.log(friends.pop())
 console.log(friends); // ["Eman", "Osama"]
+//! Assignment 03
+//$ NO numbers, One line of code
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = [];
+
+// Write One Single Line Of Code
+finalArr = arrTwo.pop().split().concat(arrOne.reverse(),arrTwo.reverse())
+console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
