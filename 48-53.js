@@ -10,18 +10,22 @@ for (i = 0; i < my.length; i++) {
 	}
 }
 console.log(string, number);
-let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+let products = [1, "Keyboard", 2, "Mouse", 3, "Pen", 4, 5, "Pad", "Monitor"];
 let colors = ["Red", "Green", "Black"];
 let models = [2020, 2021];
-for (let i = 0; i < products.length; i++) {
+productsLoop: for (let i = 0; i < products.length; i++) {
+	if (typeof products[i] === "number") {
+		continue;
+	}
 	console.log("%cProduct:", "color: red ;font-size:25px");
 	console.log("%c" + products[i], "color: rebeccapurple ;font-size: 22px");
 	console.log("%cColors:", "color: green ; font-size:20px");
-	for (let j = 0; j < colors.length; j++) {
+	colorsLoop: for (let j = 0; j < colors.length; j++) {
 		console.log(`* ${colors[j]}`);
 	}
 	console.log("%cModels:", "color: blue ;font-size:20px");
-	for (let h = 0; h < models.length; h++) {
+	modelsLoop: for (let h = 0; h < models.length; h++) {
 		console.log(`- ${models[h]}`);
 	}
 }
