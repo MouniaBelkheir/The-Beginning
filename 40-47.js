@@ -28,3 +28,11 @@ let num = 3;
 console.log(myFriends.push("jjj")); // ["Ahmed", "Elham", "Osama"];
 console.log(myFriends.splice(3,1)); // ["Ahmed", "Elham", "Osama"];
 console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+//! Assignment 02
+//$ No Slice method
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+// Write Your Code Here
+console.log(friends.shift())
+console.log(friends.pop())
+console.log(friends); // ["Eman", "Osama"]
