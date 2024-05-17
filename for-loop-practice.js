@@ -23,12 +23,16 @@ for (let i = start; i <= end; i += start) {
 	console.log([i].join());
 }
 // Output
-// 10
-// 20
-// 30
-// 50
-// 60
-// 70
-// 80
-// 90
-// 100
+// 10 20 30 50 60 70 80 90  100
+// ! Assignment 02
+let startt = 10;
+let endd = 0;
+let stop = 3;
+for (let j = startt; j >= endd; j--) {
+	j >= start ? console.log(j) : console.log(`${endd}${j}`);
+	if (j === stop) {
+		break;
+	}
+}
+// Output
+// 10  09  08 07 06 05 04 03
