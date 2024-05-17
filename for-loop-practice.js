@@ -76,3 +76,17 @@ for (let q = letter.length - letter.length; q < friends.length; q++) {
 // "3 => Mahmoud"
 // "4 => Osama"
 // "5 => Sameh"
+// ! Assignment 06
+let start = 0;
+let swappedName = "elZerO";
+let result = "";
+for (let b = start; b < swappedName.length; b++) {
+	if (swappedName[b] === swappedName[b].toUpperCase()) {
+		result += swappedName[b].toLowerCase();
+	} else {
+		result += swappedName[b].toUpperCase();
+	}
+}
+console.log(result);
+// Output
+// $"ELzERo"
