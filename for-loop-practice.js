@@ -36,3 +36,32 @@ for (let j = startt; j >= endd; j--) {
 }
 // Output
 // 10  09  08 07 06 05 04 03
+// ! Assignment 03
+let start_ = 1;
+let end_ = 6;
+let breaker = 2;
+for (let h = start_; h <= end_; h++) {
+	console.log(h);
+	for (let x = breaker; x < end_; x += breaker) {
+		console.log("--", x);
+	}
+}
+// Output
+//* 1
+//* -- 2
+//* -- 4
+//* 2
+//* -- 2
+//* -- 4
+//* 3
+//* -- 2
+//* -- 4
+//* 4
+//* -- 2
+//* -- 4
+//* 5
+//* -- 2
+//* -- 4
+//* 6
+//* -- 2
+//* -- 4
