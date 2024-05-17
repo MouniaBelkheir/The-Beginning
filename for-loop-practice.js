@@ -79,13 +79,11 @@ for (let q = letter.length - letter.length; q < friends.length; q++) {
 // ! Assignment 06
 let start = 0;
 let swappedName = "elZerO";
-let result = "";
+
 for (let b = start; b < swappedName.length; b++) {
-	if (swappedName[b] === swappedName[b].toUpperCase()) {
-		result += swappedName[b].toLowerCase();
-	} else {
-		result += swappedName[b].toUpperCase();
-	}
+	swappedName[b] === swappedName[b].toUpperCase()
+		? swappedName[b].toLowerCase()
+		: swappedName[b].toUpperCase();
 }
 console.log(result);
 // Output
