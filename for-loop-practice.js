@@ -46,22 +46,20 @@ for (let h = start_; h <= end_; h++) {
 		console.log("--", x);
 	}
 }
-// Output
-//* 1
-//* -- 2
-//* -- 4
-//* 2
-//* -- 2
-//* -- 4
-//* 3
-//* -- 2
-//* -- 4
-//* 4
-//* -- 2
-//* -- 4
-//* 5
-//* -- 2
-//* -- 4
-//* 6
-//* -- 2
-//* -- 4
+// ! Assignment 04
+let index = 10; //$ first loop condition
+let jump = 2;
+for (;;) {
+	// Write Your Code Here
+	console.log(index);
+	index -= jump; //$ third loop condition
+	if (index < jump + jump) break; //$ second loop condition
+}
+//* Another solution
+// $for (;;) {
+// $  let i = index;
+// $  console.log(i);
+// $  index -= jump;
+// $  if (index < 4) break;
+// $}
+
