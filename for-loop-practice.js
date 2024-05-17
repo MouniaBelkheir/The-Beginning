@@ -90,3 +90,16 @@ for (let b = start; b < swappedName.length; b++) {
 console.log(result);
 // Output
 // $"ELzERo"
+// ! Assignment 07
+let starting = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
+//$ for (let k = -mix.indexOf(-("C")); k < mix.length; k++) {
+for (let k = -mix.lastIndexOf();k < mix.length; k++) {
+	if(typeof(mix[k])==="string") continue
+	console.log(mix[k]);
+	}
+
+// Output
+// 2;
+// 3;
+// 4;
