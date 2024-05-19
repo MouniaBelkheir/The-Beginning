@@ -139,3 +139,25 @@ function sayHello(theName, theGender = "") {
 sayHello("Osama", "Male"); // "Hello Mr Osama"
 sayHello("Eman", "Female"); // "Hello Miss Eman"
 sayHello("Sameh"); // "Hello Sameh"
+//! Assignment 02
+function calculate(firstNum, secondNum, operation) {
+	if (typeof secondNum !== "number") {
+		return "Second Number is Not Found";
+	}
+	switch (operation) {
+		case "add":
+			return firstNum + secondNum;
+		case "subtract":
+			return firstNum - secondNum;
+		case "multiply":
+			return firstNum * secondNum;
+		default:
+			return firstNum + secondNum;
+	}
+}
+
+console.log(calculate(20)); // Second Number Not Found
+console.log(calculate(20, 30)); // 50
+console.log(calculate(20, 30, "add")); // 50
+console.log(calculate(20, 30, "subtract")); // -10
+console.log(calculate(20, 30, "multiply")); // 600
