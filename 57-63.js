@@ -165,15 +165,14 @@ console.log(calculate(20, 30, "multiply")); // 600
 //! Assignment 03
 function ageInTime(theAge) {
 	if (theAge < 10 || theAge > 100) {
-		document.write("Age Out of Range",`<hr>`);
+		document.write("Age Out of Range", `<hr>`);
 	} else {
-        document.write(`Your Age is: ${theAge * 12} Months<br>`)
-        document.write(`Your Age is: ${ theAge * 52 } Weeks<br>`)
-        document.write(`Your Age is: ${ theAge * 365 } Days<br>`)
-        document.write(`Your Age is: ${ theAge * 8760 } Hours<br>`)
-        document.write(`Your Age is: ${ theAge * 525600 } Minutes<br>`)
-        document.write(`Your Age is: ${theAge * 31536000} Seconds<br>`)
-       
+		document.write(`Your Age is: ${theAge * 12} Months<br>`);
+		document.write(`Your Age is: ${theAge * 52} Weeks<br>`);
+		document.write(`Your Age is: ${theAge * 365} Days<br>`);
+		document.write(`Your Age is: ${theAge * 8760} Hours<br>`);
+		document.write(`Your Age is: ${theAge * 525600} Minutes<br>`);
+		document.write(`Your Age is: ${theAge * 31536000} Seconds<br>`);
 	}
 }
 
@@ -187,3 +186,12 @@ ageInTime(50); // Months Example => 456 Months
 //$ 1 year = 8760 hours
 //$ 1 year = 525600 minutes
 //$ 1 year = 31536000 seconds
+//! Assignment 05
+function createSelectBox(startYear, endYear) {
+	document.write(`<select>`);
+	for (i = startYear; i <= endYear; i++) {
+		document.write(`<option value=${i}>${i}</option>`);
+	}
+	document.write(`</select>`);
+}
+createSelectBox(2000, 2021);
