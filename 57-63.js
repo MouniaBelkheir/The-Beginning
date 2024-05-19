@@ -161,3 +161,29 @@ console.log(calculate(20, 30)); // 50
 console.log(calculate(20, 30, "add")); // 50
 console.log(calculate(20, 30, "subtract")); // -10
 console.log(calculate(20, 30, "multiply")); // 600
+
+//! Assignment 03
+function ageInTime(theAge) {
+	if (theAge < 10 || theAge > 100) {
+		document.write("Age Out of Range",`<hr>`);
+	} else {
+        document.write(`Your Age is: ${theAge * 12} Months<br>`)
+        document.write(`Your Age is: ${ theAge * 52 } Weeks<br>`)
+        document.write(`Your Age is: ${ theAge * 365 } Days<br>`)
+        document.write(`Your Age is: ${ theAge * 8760 } Hours<br>`)
+        document.write(`Your Age is: ${ theAge * 525600 } Minutes<br>`)
+        document.write(`Your Age is: ${theAge * 31536000} Seconds<br>`)
+       
+	}
+}
+
+// Needed Output
+ageInTime(1); // Age Out Of Range
+ageInTime(110); // Months Example => 456 Months
+ageInTime(50); // Months Example => 456 Months
+//$ 1 year = 12 months
+//$ 1 year = 52 weeks
+//$ 1 year = 365 days
+//$ 1 year = 8760 hours
+//$ 1 year = 525600 minutes
+//$ 1 year = 31536000 seconds
