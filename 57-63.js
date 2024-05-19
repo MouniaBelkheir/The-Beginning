@@ -48,14 +48,53 @@ function showInfo(
 		if (skills.length === 0) {
 			document.write("No Skills added!");
 		}
-		// for (let s = 0; s < skills.length; s++) {
-		// 	document.write(`<p>${skills[s]}</p>`);
-		// }
+		//$ for (let s = 0; s < skills.length; s++) {
+		//$ 	document.write(`<p>${skills[s]}</p>`);
+		//$ }
 	} else if (skills.length > 0) {
 		document.write("Skills are Hidden!");
 	} else {
-		document.write("Skills are Hidden, in fact, there are no skills listed!");
+		document.write("Skills are Hidden,<br> No skills listed!");
 	}
 	document.write(`</div>`);
 }
 showInfo("Salma", 20, 50, "Yes", "Html", "CSS", "JS");
+
+//! Random Argument Challenge
+//? name = string - age = number - status = boolean
+function showDetails(a, b, c) {
+	let name;
+	let age;
+	let status;
+	if (typeof a === "string") {
+		name = a;
+	} else if (typeof b === "string") {
+		name = b;
+	} else {
+		name = c;
+	}
+	if (typeof a === "number") {
+		age = a;
+	} else if (typeof b === "number") {
+		age = b;
+	} else {
+		age = c;
+	}
+	if (typeof a === "boolean") {
+		status = a;
+	} else if (typeof b === "boolean") {
+		status = b;
+	} else {
+		status = c;
+	}
+	status = status ? (status = "Available") : (status = "Not Available");
+	document.write(
+		`<h4>Hello ${name} your age is ${age}, You are ${status} for hire</h4>`
+	);
+}
+//$ Output
+showDetails(3, "H", true);
+showDetails("M", 20, false);
+showDetails(20, false, "X");
+showDetails("K", true, 15);
+//* Hello "Name" your age is "Age", You are Available/ Not Availablee for hire
