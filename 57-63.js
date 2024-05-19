@@ -195,3 +195,19 @@ function createSelectBox(startYear, endYear) {
 	document.write(`</select>`);
 }
 createSelectBox(2000, 2021);
+//! Assignment 06
+function multiply(...Numbers) {
+	let operation = 1;
+	for (let i = 0; i < Numbers.length; i++) {
+		if (typeof Numbers[i] === "string") {
+			continue;
+		}
+		Numbers[i] = Math.trunc(Numbers[i]);
+		operation *= Numbers[i];
+	}
+	return `Final result is ${operation}`;
+}
+
+console.log(multiply(10, 20)); // 200
+console.log(multiply("A", 10, 30)); // 300
+console.log(multiply(100.5, 10, "B")); // 1000
