@@ -60,7 +60,7 @@ function showInfo(
 }
 showInfo("Salma", 20, 50, "Yes", "Html", "CSS", "JS");
 
-//! Random Argument Challenge
+//! Random Argument Challenge is Assignment 04
 //? name = string - age = number - status = boolean
 function showDetails(a, b, c) {
 	let name;
