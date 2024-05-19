@@ -62,36 +62,36 @@ showInfo("Salma", 20, 50, "Yes", "Html", "CSS", "JS");
 
 //! Random Argument Challenge
 //? name = string - age = number - status = boolean
-// function showDetails(a, b, c) {
-// 	let name;
-// 	let age;
-// 	let status;
-// 	if (typeof a === "string") {
-// 		name = a;
-// 	} else if (typeof b === "string") {
-// 		name = b;
-// 	} else {
-// 		name = c;
-// 	}
-// 	if (typeof a === "number") {
-// 		age = a;
-// 	} else if (typeof b === "number") {
-// 		age = b;
-// 	} else {
-// 		age = c;
-// 	}
-// 	if (typeof a === "boolean") {
-// 		status = a;
-// 	} else if (typeof b === "boolean") {
-// 		status = b;
-// 	} else {
-// 		status = c;
-// 	}
-// 	status = status ? (status = "Available") : (status = "Not Available");
-// 	document.write(
-// 		`<h4>Hello ${name} your age is ${age}, You are ${status} for hire</h4>`
-// 	);
-// }
+function showDetails(a, b, c) {
+	let name;
+	let age;
+	let status;
+	if (typeof a === "string") {
+		name = a;
+	} else if (typeof b === "string") {
+		name = b;
+	} else {
+		name = c;
+	}
+	if (typeof a === "number") {
+		age = a;
+	} else if (typeof b === "number") {
+		age = b;
+	} else {
+		age = c;
+	}
+	if (typeof a === "boolean") {
+		status = a;
+	} else if (typeof b === "boolean") {
+		status = b;
+	} else {
+		status = c;
+	}
+	status = status ? (status = "Available") : (status = "Not Available");
+	document.write(
+		`<h4>Hello ${name} your age is ${age}, You are ${status} for hire</h4>`
+	);
+}
 //$ Output
 showDetails(3, "H", true);
 showDetails("M", 20, false);
@@ -99,28 +99,43 @@ showDetails(20, false, "X");
 showDetails("K", true, 15);
 //* Hello "Name" your age is "Age", You are Available/ Not Availablee for hire
 //! Solution2
-function showDetails(a, b, c) {
-    // وضع القيم في مصفوفة
-    let args = [a, b, c];
-    
-    let name = "Unknown";
-    let age = "Unknown";
-    let status = false;
-    
-    // التحقق من كل عنصر في المصفوفة وتعيين القيم المناسبة
-    for (let i = 0; i < args.length; i++) {
-      if (typeof args[i] === "string") {
-        name = args[i];
-      } else if (typeof args[i] === "number") {
-        age = args[i];
-      } else if (typeof args[i] === "boolean") {
-        status = args[i];
-      }
-    }
-    
-    // تحويل الحالة إلى نص
-    status = status ? "Available" : "Not Available";
-    
-    // عرض النتيجة
-    document.write(`Hello ${name}, your age is ${age}, You are ${status} for hire<br>`);
-  }
+// function showDetails(a, b, c) {
+//     // وضع القيم في مصفوفة
+//     let args = [a, b, c];
+
+//     let name = "Unknown";
+//     let age = "Unknown";
+//     let status = false;
+
+//     // التحقق من كل عنصر في المصفوفة وتعيين القيم المناسبة
+//     for (let i = 0; i < args.length; i++) {
+//       if (typeof args[i] === "string") {
+//         name = args[i];
+//       } else if (typeof args[i] === "number") {
+//         age = args[i];
+//       } else if (typeof args[i] === "boolean") {
+//         status = args[i];
+//       }
+//     }
+
+//     // تحويل الحالة إلى نص
+//     status = status ? "Available" : "Not Available";
+
+//     // عرض النتيجة
+//     document.write(`Hello ${name}, your age is ${age}, You are ${status} for hire<br>`);
+//   }
+//! Assignment 01
+function sayHello(theName, theGender = "") {
+	if (theGender === "Female") {
+		document.write(`<p>Hello Miss ${theName}</p>`);
+	} else if (theGender === "Male") {
+		document.write(`<p>Hello Mr ${theName}</p>`);
+	} else {
+		document.write(`<p>Hello ${theName}</p>`);
+	}
+}
+
+// Needed Output
+sayHello("Osama", "Male"); // "Hello Mr Osama"
+sayHello("Eman", "Female"); // "Hello Miss Eman"
+sayHello("Sameh"); // "Hello Sameh"
