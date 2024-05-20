@@ -52,11 +52,25 @@ console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
 //   //* Hello Ahmed A., Your Age Is 32, You Live In SY
 //! Assignment 02
 //$ To Arrow function:
- const itsMe = () =>
-     `Iam A Normal Function`;
-  
+//! 01
+const itsMe = () => `Iam A Normal Function`;
+
 console.log(itsMe()); // Iam A Normal Function
-//!!!!!
-const urlCreate = (protocol, web, tld)=>
-     `${protocol}://www.${web}.${tld}`;
-      console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+//! 02
+const urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+//! Assignment 03
+const checker = (zName) => (status) => (salary) =>
+	status === "Available"
+		? `${zName}, My Salary Is ${salary}`
+		: `Iam Not Avaialble`;
+
+console.log(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
+console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
+//$ function checker(zName) {
+//$     return function (status) {
+//$       return function (salary) {
+//$         return status === "Available" ? `${zName}, My Salary Is ${salary}` : $`Iam Not Avaialble`;
+// $      };
+//$     };
+// $  }
