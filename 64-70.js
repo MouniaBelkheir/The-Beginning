@@ -74,3 +74,32 @@ console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
 // $      };
 //$     };
 // $  }
+//! Assignment 04
+function specialMix(...data) {
+	let sum = 0;
+	let allStrings = true;
+
+	for (let item of data) {
+		if (typeof item === "number") {
+			sum += item;
+			allStrings = false;
+		} else if (typeof item === "string") {
+			let num = parseFloat(item);
+			if (!isNaN(num)) {
+				sum += num;
+				allStrings = false;
+			}
+		}
+	}
+
+	if (allStrings) {
+		return "All Is Strings";
+	} else {
+		return sum;
+	}
+}
+
+console.log(specialMix(10, 20, 30)); // 60
+console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
