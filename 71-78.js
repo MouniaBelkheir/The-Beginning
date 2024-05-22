@@ -56,3 +56,14 @@ let ignore = ignoreNumbers
 	.map((e) => (isNaN(parseInt(e)) ? e : ""))
 	.join("");
 console.log(ignore);
+//! Higher Order Functions - Filter
+//$ 1
+let numberss = [11, 20, 2, 5, 17, 10];
+let addMap = numberss.map((n) => n + n);
+console.log(addMap);
+let addFilter = numberss.filter((n) => n % 2 === 0);
+console.log(addFilter);
+//$ 2
+let friends = ["Ahmad", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+let startWithA = friends.filter((n) => n.startsWith("A"));
+console.log(startWithA);
