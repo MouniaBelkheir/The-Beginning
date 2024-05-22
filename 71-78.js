@@ -50,12 +50,12 @@ let invertedNumbers = [1, -10, -20, 15, 100, -30];
 let invert = invertedNumbers.map((n) => -n);
 console.log(invert);
 //$ 3
-let ignoreNumbers = "Elz123er4o";
-let ignore = ignoreNumbers
-	.split("")
-	.map((e) => (isNaN(parseInt(e)) ? e : ""))
-	.join("");
-console.log(ignore);
+// let ignoreNumbers = "Elz123er4o";
+// let ignore = ignoreNumbers
+// 	.split("")
+// 	.map((e) => (isNaN(parseInt(e)) ? e : ""))
+// 	.join("");
+// console.log(ignore);
 //! Higher Order Functions - Filter
 //$ 1
 let numberss = [11, 20, 2, 5, 17, 10];
@@ -67,3 +67,26 @@ console.log(addFilter);
 let friends = ["Ahmad", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
 let startWithA = friends.filter((n) => n.startsWith("A"));
 console.log(startWithA);
+//! Filter Practice
+//$ 1 Filter words more then 4 characters
+let sentence = "I Love Foood Code Too Playing Much";
+let word = sentence
+	.split(" ")
+	.filter((w) => w.length <= 4)
+	.join(" ");
+console.log(word);
+//$ 2
+let ignoreNumbers = "Elz123er4o";
+let ignore = ignoreNumbers
+	.split("")
+	.filter((n) => isNaN(parseInt(n)))
+	.join("");
+
+console.log(ignore);
+//$ 3 Filter Strings + Multiply
+let mix = "A13BS2ZX";
+let sm = mix
+	.split("")
+	.filter((s) => !isNaN(parseInt(s)))
+	.map((s) => s * s);
+console.log(sm);
