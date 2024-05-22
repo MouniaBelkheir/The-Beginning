@@ -36,3 +36,23 @@ function addition(el) {
 }
 let add = myNums.map(addition);
 console.log(add);
+
+//! Map Practice
+//$ 1
+let swappingCases = "elZERo";
+let swap = swappingCases
+	.split("")
+	.map((e) => (e === e.toLowerCase() ? e.toUpperCase() : e.toLowerCase()))
+	.join("");
+console.log(swap);
+//$ 2
+let invertedNumbers = [1, -10, -20, 15, 100, -30];
+let invert = invertedNumbers.map((n) => -n);
+console.log(invert);
+//$ 3
+let ignoreNumbers = "Elz123er4o";
+let ignore = ignoreNumbers
+	.split("")
+	.map((e) => (isNaN(parseInt(e)) ? e : ""))
+	.join("");
+console.log(ignore);
