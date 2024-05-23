@@ -106,3 +106,21 @@ console.log(big);
 let removeCharts = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
 let removed = removeCharts.filter((r) => r !== "@").reduce((ac, cu) => ac + cu);
 console.log(removed);
+//! Higher Order Functions - ForEach lesson And Practice
+let allLis = document.querySelectorAll("ul li");
+let allDivs = document.querySelectorAll(" .content div");
+
+allLis.forEach(function (li) {
+	li.onclick = function () {
+		allLis.forEach(function (li) {
+			// remove active class from all elements
+			li.classList.remove("active");
+		});
+		// add active class to this element
+		this.classList.add("active");
+		// Hide all divs
+		allDivs.forEach(function (div) {
+			div.style.display = "none";
+		});
+	};
+});
