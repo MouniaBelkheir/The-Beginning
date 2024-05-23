@@ -90,3 +90,19 @@ let sm = mix
 	.filter((s) => !isNaN(parseInt(s)))
 	.map((s) => s * s);
 console.log(sm);
+
+//! Higher Order Functions - Reduce
+let numss = [10, 20, 15, 30];
+let add_ = numss.reduce((acc, cur) => acc + cur, 5);
+console.log(add_);
+//$ Reduce Practice
+//? 1
+let theBiggest = ["Bla", "Probaganda", "Other", "AAA", "Battery", "Test"];
+let big = theBiggest.reduce((acc, curr) =>
+	acc.length > curr.length ? acc : curr
+);
+console.log(big);
+//? 2
+let removeCharts = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+let removed = removeCharts.filter((r) => r !== "@").reduce((ac, cu) => ac + cu);
+console.log(removed);
