@@ -167,3 +167,8 @@ let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
 let sequence = numsAndStrings.filter((e) => !isNaN(e)).map((n) => -n);
 console.log(sequence);
 // [-1, -10, 10, 20, -5, -3]
+//! Assignment 05/ Reduce
+let nums_ = [2, 12, 11, 5, 10, 1, 99];
+let result = nums_.reduce((ac, cu) => (cu % 2 === 1 ? ac + cu : ac * cu), 1);
+console.log(result);
+// 500
