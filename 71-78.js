@@ -127,12 +127,16 @@ allLis.forEach(function (li) {
 //! Higher Order Functions - Challenge
 let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 let solution = myString
-	.split(",") //$ turn the string into an array
-	.filter((w) => isNaN(w)) //$ removed the numbers
-	.filter((e) => e !== myString.split("").pop()) //$ remove the last index "Z"
-	.map((w) => (w.length > -myString.lastIndexOf() ? w.split("").pop() : w)) // $ removed the E from "EE" (w.length>2)
-	.reduce((ac, cu) => ac + cu) //$ turned the array to a string
-	.split("_") //$ removed "_" and the string became an array again
-	.join(" "); //$ turn the array into the final string output
+	.split(",") // turn the string into an array
+	.filter((w) => isNaN(w) && w !== myString.split("").pop()) // removed the numbers && "Z"
+	.map((w) => (w.length > -myString.lastIndexOf() ? w.split("").pop() : w)) //  removed the E from "EE" (w.length>2)
+	.reduce((ac, cu) => ac + cu) // turned the array to a string
+	.split("_") // removed "_" and the string became an array again
+	.join(" "); // turn the array into the final string output
 
 console.log(solution); // Outputs "Elzero Web School"
+//! Assignment 01/ Map + Reduce
+let mixed = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+let phrase1 = mixed.map((w) => (isNaN(w) ? w : "")).reduce((ac, cu) => ac + cu);
+console.log(phrase1);
+// Elzero
