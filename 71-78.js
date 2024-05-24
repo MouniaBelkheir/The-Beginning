@@ -148,3 +148,17 @@ let phrase2 = myString1
 	.join("");
 console.log(phrase2);
 // Elzero
+//! Assignment 03/ Reduce
+//$01
+let myArray = ["E", "l", "z", ["e", "r"], "o"];
+// let phrase3 = myArray
+// .reduce((ac, cu) => ac + cu):
+// .split(",")
+// .join("");
+// console.log(phrase3);
+// Elzero
+//$02
+let phrase3 = myArray
+	.reduce((ac, cu) => ac.concat(cu), []) // Flatten the array
+	.join(""); // Join the characters into a single string
+console.log(phrase3);
