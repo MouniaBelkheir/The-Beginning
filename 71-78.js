@@ -140,3 +140,11 @@ let mixed = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
 let phrase1 = mixed.map((w) => (isNaN(w) ? w : "")).reduce((ac, cu) => ac + cu);
 console.log(phrase1);
 // Elzero
+//! Assignment 02/ Filter + Concatenation
+let myString1 = "EElllzzzzzzzeroo";
+let phrase2 = myString1
+	.split("")
+	.filter((ele, ind, arr) => arr[ind] !== arr[ind + 1])
+	.join("");
+console.log(phrase2);
+// Elzero
