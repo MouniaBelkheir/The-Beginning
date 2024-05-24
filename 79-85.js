@@ -57,3 +57,11 @@ console.log("*************");
 console.log(theUser["adresses"].CANADA["one"]);
 console.log(theUser.check());
 console.log(theUser.checkAv());
+//! Create Object With "new" Keyword
+let person = new Object({ country: "Alg" });
+console.log(person);
+person.name = "Moon";
+person["age"] = 33;
+person.country = "Algeria";
+person.greeting = () => "Hey!";
+console.log(person);
