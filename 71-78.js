@@ -162,3 +162,8 @@ let phrase3 = myArray
 	.reduce((ac, cu) => ac.concat(cu), []) // Flatten the array
 	.join(""); // Join the characters into a single string
 console.log(phrase3);
+//! Assignment 04/ Filter + Map
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+let sequence = numsAndStrings.filter((e) => !isNaN(e)).map((n) => -n);
+console.log(sequence);
+// [-1, -10, 10, 20, -5, -3]
