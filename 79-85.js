@@ -150,14 +150,43 @@ console.log(member.fullDetails());
 let objMethodOne = {};
 objMethodOne.property = "Method One";
 console.log(objMethodOne.property); // "Method One"
+
 //$ Method Two
 let objMethodTwo = new Object({});
 objMethodTwo.property = "Method Two";
 console.log(objMethodTwo.property); // "Method Two"
+
 //$ Method Three
 let objMethodThree = Object.create({});
 objMethodThree.property = "Method Three";
 console.log(objMethodThree.property); // "Method Three"
+
 //$ Method Four
 let objMethodFour = Object.assign({}, { property: "Method Four" });
 console.log(objMethodFour.property); // "Method Four"
+//! Assignment 03: Object.assign()
+let a = 1;
+
+let threeNums = {
+	b: 2,
+	c: 3,
+	d: 4,
+};
+
+let twoNums = {
+	e: 5,
+	f: 6,
+};
+// Create Your Object Here in One Line
+finalObject = Object.assign({}, { a }, threeNums, twoNums);
+
+console.log(finalObject);
+
+/*
+  a: 1
+  b: 2
+  c: 3
+  d: 4
+  e: 5
+  f: 6
+*/
