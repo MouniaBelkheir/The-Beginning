@@ -64,4 +64,42 @@ person.name = "Moon";
 person["age"] = 33;
 person.country = "Algeria";
 person.greeting = () => "Hey!";
+
 console.log(person);
+
+//! This Keyword
+console.log("##############");
+
+document.getElementById("cl").onclick = function () {
+	console.log(this);
+};
+let one = {
+	age: 33,
+	ageInDays: function () {
+		console.log(typeof this);
+		return this.age * 365;
+	},
+};
+
+console.log(one.age);
+console.log(one.ageInDays());
+//! Create Object With "create" Method
+let userr = {
+	age: 20,
+	doubleAge: function () {
+		return this.age * 2;
+	},
+};
+
+console.log(userr);
+console.log(userr.age);
+console.log(userr.doubleAge());
+let obj = Object.create({});
+console.log(obj);
+obj.a = 100;
+console.log(obj);
+let copyObj = Object.create(userr);
+copyObj.age = 30;
+console.log(copyObj);
+console.log(copyObj.age);
+console.log(copyObj.doubleAge());
