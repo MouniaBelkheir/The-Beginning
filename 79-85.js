@@ -130,3 +130,18 @@ finalObject.prop4 = 4;
 console.log(finalObject);
 let newObject = Object.assign({}, obj1, { prop5: 5, prop6: 6 });
 console.log(newObject);
+//! Assignment 01
+let member = {
+	name: "Elzero",
+	age: 38,
+	country: "Egypt",
+	fullDetails: function () {
+		return `My name is ${this.name}, My age is ${this.age}, I live in ${this.country}`;
+	},
+};
+
+console.log(member.name); // Elzero
+console.log(member.age); // 38
+console.log(member.country); // Egypt
+console.log(member.fullDetails());
+// My Name Is Elzero, My Age Is 38, I Live in Egypt
