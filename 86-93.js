@@ -43,9 +43,12 @@ document.images[0].className = "firstCat";
 //! Set
 let myLink = document.querySelector(".link");
 console.log(myLink);
-console.log(myLink.getAttribute('class'))
-console.log(myLink.getAttribute('href'))
-myLink.setAttribute("href",'##')
-myLink.setAttribute("class",'newLink')
-console.log(myLink.getAttribute('href'))
-console.log(myLink.getAttribute('class'))
+console.log(myLink.getAttribute("class"));
+console.log(myLink.getAttribute("href"));
+myLink.setAttribute("href", "##");
+myLink.setAttribute("class", "newLink");
+console.log(myLink.getAttribute("href"));
+console.log(myLink.getAttribute("class"));
+//! Check Attributes And Examples
+console.log(document.getElementsByTagName("p"));
+console.log(document.getElementsByClassName("js"));
