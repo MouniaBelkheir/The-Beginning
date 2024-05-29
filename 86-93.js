@@ -50,5 +50,20 @@ myLink.setAttribute("class", "newLink");
 console.log(myLink.getAttribute("href"));
 console.log(myLink.getAttribute("class"));
 //! Check Attributes And Examples
-console.log(document.getElementsByTagName("p"));
-console.log(document.getElementsByClassName("js"));
+console.log(document.getElementsByTagName("p")[0].attributes);
+let myP = document.getElementsByTagName("p")[0];
+if (myP.hasAttribute("data-src")) {
+	if (myP.getAttribute("data-src") === "") {
+		myP.removeAttribute("data-src");
+	} else {
+		myP.setAttribute("data-src", "updated");
+	}
+} else {
+	console.log("not found");
+}
+myP.hasAttributes() ? console.log(myP.attributes) : `Doesn't have Atributes`;
+if (document.getElementsByTagName("div")[0].hasAttributes()) {
+	console.log(`Has attributes`);
+} else {
+	console.log(`no attributses`);
+}
