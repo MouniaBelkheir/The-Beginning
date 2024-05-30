@@ -67,3 +67,19 @@ if (document.getElementsByTagName("div")[0].hasAttributes()) {
 } else {
 	console.log(`no attributses`);
 }
+//! Create And Append Elements
+let myNewElement = document.createElement("div");
+let myAttrb = document.createAttribute("data-custom");
+console.log(myNewElement);
+myNewElement.className = "product";
+myNewElement.setAttributeNode(myAttrb);
+myNewElement.setAttribute("data-test", "tset");
+let myText = document.createTextNode("Product one");
+//$ Append text to element
+myNewElement.appendChild(myText);
+//$ Append element to body
+document.body.appendChild(myNewElement);
+let myComment = document.createComment('this is a div')
+console.log(myComment)
+//$ Append comment to element
+myNewElement.appendChild(myComment)
