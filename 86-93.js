@@ -83,3 +83,4 @@ let myComment = document.createComment('this is a div')
 console.log(myComment)
 //$ Append comment to element
 myNewElement.appendChild(myComment)
+//! Product With Title And Description Practice
