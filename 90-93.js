@@ -35,29 +35,63 @@
 // console.log(myElement.lastElementChild)
 //! DOM Events
 //$ OnClick
-let myBtn = document.getElementById("btn");
-myBtn.onclick = () => console.log("button clicked");
+// let myBtn = document.getElementById("btn");
+// myBtn.onclick = () => console.log("button clicked");
 
-//! Validate Form And Prevent Default
-let userInput = document.querySelector("[name='username']");
-let ageInput = document.querySelector("[name='age']");
-document.forms[0].onsubmit = function (e) {
-	let userValid = false;
-	let ageValid = false;
+// //! Validate Form And Prevent Default
+// let userInput = document.querySelector("[name='username']");
+// let ageInput = document.querySelector("[name='age']");
+// document.forms[0].onsubmit = function (e) {
+// 	let userValid = false;
+// 	let ageValid = false;
 
-	console.log(userInput.value);
-	console.log(userInput.value.length);
-	if (userInput.value !== "" && userInput.value.length <= 10) {
-		userValid = true;
-	}
-	if (ageInput.value != "") {
-		ageValid = true;
-	}
-	if (ageValid === false || userValid === false) {
-		e.preventDefault();
-	}
-};
-document.links[0].onclick = function (event) {
-	console.log(event);
-	event.preventDefault();
-};
+// 	console.log(userInput.value);
+// 	console.log(userInput.value.length);
+// 	if (userInput.value !== "" && userInput.value.length <= 10) {
+// 		userValid = true;
+// 	}
+// 	if (ageInput.value != "") {
+// 		ageValid = true;
+// 	}
+// 	if (ageValid === false || userValid === false) {
+// 		e.preventDefault();
+// 	}
+// };
+// document.links[0].onclick = function (event) {
+// 	console.log(event);
+// 	event.preventDefault();
+// };
+//! Assignment 01
+//$ 4 times querySellector / querrySellector All
+//* <div id="elzero" class="element" name="js">JavaScript</div>
+//? 1
+console.log(document.getElementById("elzero"));
+//? 2
+console.log(document.getElementsByClassName("element"));
+//? 3
+console.log(document.getElementsByTagName("div"));
+//? 4
+console.log(document.querySelector("div"));
+//? 5
+console.log(document.querySelectorAll("div")[0]);
+//? 6
+console.log(document.querySelector("div"));
+//? 7
+console.log(document.querySelector(".element"));
+//? 8
+console.log(document.querySelector("#elzero"));
+//? 9
+console.log(document.body.children[0]);
+//? 10
+console.log(document.querySelector('[name="js"]'));
+//? 11
+console.log(document.querySelectorAll('[name="js"]')[0]);
+//? 12
+console.log(document.querySelectorAll(".element")[0]);
+//? 13
+console.log(document.querySelectorAll("div#elzero.element")[0]);
+//? 14
+console.log(document.getElementsByName("js")[0]);
+//? 15
+console.log(document.body.firstElementChild);
+
