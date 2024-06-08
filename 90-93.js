@@ -64,34 +64,41 @@
 //! Assignment 01
 //$ 4 times querySellector / querrySellector All
 //* <div id="elzero" class="element" name="js">JavaScript</div>
-//? 1
-console.log(document.getElementById("elzero"));
-//? 2
-console.log(document.getElementsByClassName("element"));
-//? 3
-console.log(document.getElementsByTagName("div"));
-//? 4
-console.log(document.querySelector("div"));
-//? 5
-console.log(document.querySelectorAll("div")[0]);
-//? 6
-console.log(document.querySelector("div"));
-//? 7
-console.log(document.querySelector(".element"));
-//? 8
-console.log(document.querySelector("#elzero"));
-//? 9
-console.log(document.body.children[0]);
-//? 10
-console.log(document.querySelector('[name="js"]'));
-//? 11
-console.log(document.querySelectorAll('[name="js"]')[0]);
-//? 12
-console.log(document.querySelectorAll(".element")[0]);
-//? 13
-console.log(document.querySelectorAll("div#elzero.element")[0]);
-//? 14
-console.log(document.getElementsByName("js")[0]);
-//? 15
-console.log(document.body.firstElementChild);
-
+// //? 1
+// console.log(document.getElementById("elzero"));
+// //? 2
+// console.log(document.getElementsByClassName("element"));
+// //? 3
+// console.log(document.getElementsByTagName("div"));
+// //? 4
+// console.log(document.querySelector("div"));
+// //? 5
+// console.log(document.querySelectorAll("div")[0]);
+// //? 6
+// console.log(document.querySelector("div"));
+// //? 7
+// console.log(document.querySelector(".element"));
+// //? 8
+// console.log(document.querySelector("#elzero"));
+// //? 9
+// console.log(document.body.children[0]);
+// //? 10
+// console.log(document.querySelector('[name="js"]'));
+// //? 11
+// console.log(document.querySelectorAll('[name="js"]')[0]);
+// //? 12
+// console.log(document.querySelectorAll(".element")[0]);
+// //? 13
+// console.log(document.querySelectorAll("div#elzero.element")[0]);
+// //? 14
+// console.log(document.getElementsByName("js")[0]);
+// //? 15
+// console.log(document.body.firstElementChild);
+//! Assignment 02
+let logo = document.querySelectorAll("img");
+let newSrc = "https://2ality.com/2011/10/logo-js/js.jpg";
+let newAlt = "Elzero Logo";
+logo.forEach((logo) => {
+	logo.setAttribute("src", newSrc);
+	logo.setAttribute("alt", newAlt);
+});
