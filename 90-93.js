@@ -96,9 +96,25 @@
 // console.log(document.body.firstElementChild);
 //! Assignment 02
 let logo = document.querySelectorAll("img");
-let newSrc = "https://2ality.com/2011/10/logo-js/js.jpg";
+let newSrc =
+	"https://i.pinimg.com/originals/60/e4/01/60e40103520f03acc57e13d87d2d83ed.jpg";
 let newAlt = "Elzero Logo";
 logo.forEach((logo) => {
 	logo.setAttribute("src", newSrc);
 	logo.setAttribute("alt", newAlt);
 });
+//! Assignment 03
+document
+	.querySelector('input[name="dollar"]')
+	.addEventListener("input", function () {
+		let dollarValue = parseFloat(this.value);
+		let exchangeRate = 15.6;
+		let resultDiv = document.querySelector(".result");
+
+		if (!isNaN(dollarValue)) {
+			let egyptianPound = (dollarValue * exchangeRate).toFixed(2);
+			resultDiv.textContent = `${dollarValue} USD Dollar = ${egyptianPound} Egyptian Pound`;
+		} else {
+			resultDiv.textContent = `{0} USD Dollar = {0} Egyptian Pound`;
+		}
+	});
