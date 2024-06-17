@@ -118,3 +118,12 @@ document
 			resultDiv.textContent = `{0} USD Dollar = {0} Egyptian Pound`;
 		}
 	});
+//! Assignment 04
+let firstDiv = document.querySelector(".one");
+let secondDiv = document.querySelector(".two");
+let firstDivText = document.querySelector(".one").innerHTML;
+let secondDivText = document.querySelector(".two").innerHTML;
+
+firstDiv.setAttribute("title", secondDivText);
+firstDiv.innerHTML = secondDivText;
+secondDiv.innerHTML = firstDivText + " 2";
