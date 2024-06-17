@@ -95,14 +95,14 @@
 // //? 15
 // console.log(document.body.firstElementChild);
 //! Assignment 02
-let logo = document.querySelectorAll("img");
-let newSrc =
-	"https://i.pinimg.com/originals/60/e4/01/60e40103520f03acc57e13d87d2d83ed.jpg";
-let newAlt = "Elzero Logo";
-logo.forEach((logo) => {
-	logo.setAttribute("src", newSrc);
-	logo.setAttribute("alt", newAlt);
-});
+// let logo = document.querySelectorAll("img");
+// let newSrc =
+// 	"https://i.pinimg.com/originals/60/e4/01/60e40103520f03acc57e13d87d2d83ed.jpg";
+// let newAlt = "Elzero Logo";
+// logo.forEach((logo) => {
+// 	logo.setAttribute("src", newSrc);
+// 	logo.setAttribute("alt", newAlt);
+// });
 //! Assignment 03
 document
 	.querySelector('input[name="dollar"]')
@@ -127,3 +127,10 @@ let secondDivText = document.querySelector(".two").innerHTML;
 firstDiv.setAttribute("title", secondDivText);
 firstDiv.innerHTML = secondDivText;
 secondDiv.innerHTML = firstDivText + " 2";
+//! Assignment 05
+let imgs = document.querySelectorAll("img");
+imgs.forEach((img) => {
+	img.hasAttribute("alt")
+		? img.setAttribute("alt", "Old")
+		: img.setAttribute("alt", "Elzero New");
+});
