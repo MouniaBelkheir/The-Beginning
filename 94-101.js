@@ -2,7 +2,7 @@
 window.onload = function () {
 	let one = document.querySelector(".one");
 	let two = document.querySelector(".two");
-    let submit = document.querySelector(".submit");
+	let submit = document.querySelector(".submit");
 	// تأكد من أن الحقل الأول يأخذ التركيز عند تحميل الصفحة
 	if (one) {
 		one.focus();
@@ -26,3 +26,15 @@ window.onload = function () {
 // 	document.links[0].click();
 // 	event.preventDefault();
 // });
+//! Class List Object And Methods
+let element = document.getElementById("my-div");
+console.log(element.classList);
+console.log(typeof element.classList);
+console.log(element.classList.contains("one"));
+console.log(element.classList.item("0"));
+console.log(element.classList.item("2"));
+element.onclick = function () {
+	element.classList.add("add-another");
+	element.classList.remove("show");
+	element.classList.toggle("free");
+};
