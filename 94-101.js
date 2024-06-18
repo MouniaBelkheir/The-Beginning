@@ -27,14 +27,23 @@ window.onload = function () {
 // 	event.preventDefault();
 // });
 //! Class List Object And Methods
+// let element = document.getElementById("my-div");
+// console.log(element.classList);
+// console.log(typeof element.classList);
+// console.log(element.classList.contains("one"));
+// console.log(element.classList.item("0"));
+// console.log(element.classList.item("2"));
+// element.onclick = function () {
+// 	element.classList.add("add-another");
+// 	element.classList.remove("show");
+// 	element.classList.toggle("free");
+// };
+//! CSS Styling And Stylesheets
 let element = document.getElementById("my-div");
-console.log(element.classList);
-console.log(typeof element.classList);
-console.log(element.classList.contains("one"));
-console.log(element.classList.item("0"));
-console.log(element.classList.item("2"));
-element.onclick = function () {
-	element.classList.add("add-another");
-	element.classList.remove("show");
-	element.classList.toggle("free");
-};
+// element.style.color = "red";
+element.style.backgroundColor = "cyan";
+element.style.cssText = "font-weight: bold ; color:brown ";
+element.style.removeProperty("color")
+element.style.setProperty('font-size', '40px', 'important')
+document.styleSheets[0].cssRules[0].style.removeProperty('line-height')
+document.styleSheets[0].cssRules[0].style.setProperty('background-color','chocolate')
