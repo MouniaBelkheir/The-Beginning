@@ -104,33 +104,82 @@
 // 	logo.setAttribute("alt", newAlt);
 // });
 //! Assignment 03
-document
-	.querySelector('input[name="dollar"]')
-	.addEventListener("input", function () {
-		let dollarValue = parseFloat(this.value);
-		let exchangeRate = 15.6;
-		let resultDiv = document.querySelector(".result");
+// document
+// 	.querySelector('input[name="dollar"]')
+// 	.addEventListener("input", function () {
+// 		let dollarValue = parseFloat(this.value);
+// 		let exchangeRate = 15.6;
+// 		let resultDiv = document.querySelector(".result");
 
-		if (!isNaN(dollarValue)) {
-			let egyptianPound = (dollarValue * exchangeRate).toFixed(2);
-			resultDiv.textContent = `${dollarValue} USD Dollar = ${egyptianPound} Egyptian Pound`;
-		} else {
-			resultDiv.textContent = `{0} USD Dollar = {0} Egyptian Pound`;
+// 		if (!isNaN(dollarValue)) {
+// 			let egyptianPound = (dollarValue * exchangeRate).toFixed(2);
+// 			resultDiv.textContent = `${dollarValue} USD Dollar = ${egyptianPound} Egyptian Pound`;
+// 		} else {
+// 			resultDiv.textContent = `{0} USD Dollar = {0} Egyptian Pound`;
+// 		}
+// 	});
+// //! Assignment 04
+// let firstDiv = document.querySelector(".one");
+// let secondDiv = document.querySelector(".two");
+// let firstDivText = document.querySelector(".one").innerHTML;
+// let secondDivText = document.querySelector(".two").innerHTML;
+
+// firstDiv.setAttribute("title", secondDivText);
+// firstDiv.innerHTML = secondDivText;
+// secondDiv.innerHTML = firstDivText + " 2";
+// //! Assignment 05
+// let imgs = document.querySelectorAll("img");
+// imgs.forEach((img) => {
+// 	img.hasAttribute("alt")
+// 		? img.setAttribute("alt", "Old")
+// 		: img.setAttribute("alt", "Elzero New");
+// });
+//! Assignment 06
+document
+	.getElementById("elementForm")
+	.addEventListener("submit", function (event) {
+		event.preventDefault();
+		const elementCount = parseInt(this.elements.value);
+		const elementType = this.type.value.toLowerCase();
+		const elementText = this.texts.value;
+		const resultContainer = document.querySelector(".results");
+		resultContainer.innerHTML = "";
+		for (let i = 1; i <= elementCount; i++) {
+			const newElement = document.createElement(elementType);
+			newElement.textContent = elementText;
+			newElement.className = "box";
+			newElement.title = "element";
+			newElement.id = `${i}`;
+			resultContainer.appendChild(newElement);
 		}
 	});
-//! Assignment 04
-let firstDiv = document.querySelector(".one");
-let secondDiv = document.querySelector(".two");
-let firstDivText = document.querySelector(".one").innerHTML;
-let secondDivText = document.querySelector(".two").innerHTML;
 
-firstDiv.setAttribute("title", secondDivText);
-firstDiv.innerHTML = secondDivText;
-secondDiv.innerHTML = firstDivText + " 2";
-//! Assignment 05
-let imgs = document.querySelectorAll("img");
-imgs.forEach((img) => {
-	img.hasAttribute("alt")
-		? img.setAttribute("alt", "Old")
-		: img.setAttribute("alt", "Elzero New");
-});
+//   // ربط الحدث submit للنموذج
+//   document.getElementById('elementForm').addEventListener('submit', function(event) {
+//     // منع الإرسال الافتراضي للنموذج
+//     event.preventDefault();
+
+//     // استخراج عدد العناصر والنص ونوع العنصر من النموذج
+//     const elementsCount = parseInt(this.elements.value);
+//     const elementsText = this.texts.value;
+//     const elementType = this.type.value.toLowerCase();
+//     const resultsContainer = document.querySelector('.results');
+
+//     // إزالة أي عناصر قديمة من حاوية النتائج
+//     resultsContainer.innerHTML = '';
+
+//     // إنشاء العناصر الجديدة بناءً على العدد المدخل
+//     for (let i = 1; i <= elementsCount; i++) {
+//       // إنشاء عنصر جديد من النوع المحدد (Div أو Section)
+//       const newElement = document.createElement(elementType);
+
+//       // تعيين الصفات للعناصر الجديدة
+//       newElement.className = 'box'; // تعيين الصنف
+//       newElement.title = 'Element'; // تعيين العنوان
+//       newElement.id = `id-${i}`; // تعيين المعرف مع زيادة الرقم لكل عنصر
+//       newElement.textContent = elementsText; // تعيين النص الداخلي
+
+//       // إضافة العنصر الجديد إلى حاوية النتائج
+//       resultsContainer.appendChild(newElement);
+//     }
+//   });
