@@ -39,11 +39,23 @@ window.onload = function () {
 // 	element.classList.toggle("free");
 // };
 //! CSS Styling And Stylesheets
+// let element = document.getElementById("my-div");
+// // element.style.color = "red";
+// element.style.backgroundColor = "cyan";
+// element.style.cssText = "font-weight: bold ; color:brown ";
+// element.style.removeProperty("color")
+// element.style.setProperty('font-size', '40px', 'important')
+// document.styleSheets[0].cssRules[0].style.removeProperty('line-height')
+// document.styleSheets[0].cssRules[0].style.setProperty('background-color','chocolate')
+//! Before, After, Prepend, Append, Remove
 let element = document.getElementById("my-div");
-// element.style.color = "red";
-element.style.backgroundColor = "cyan";
-element.style.cssText = "font-weight: bold ; color:brown ";
-element.style.removeProperty("color")
-element.style.setProperty('font-size', '40px', 'important')
-document.styleSheets[0].cssRules[0].style.removeProperty('line-height')
-document.styleSheets[0].cssRules[0].style.setProperty('background-color','chocolate')
+let createedP = document.createElement("p");
+let content = (createedP.textContent = "hello");
+// element.appendChild(createedP);
+element.before("hello before");
+element.after("hello after");
+element.after(createedP);
+element.append(' hi')
+element.prepend(' hi ')
+element.remove()
+
