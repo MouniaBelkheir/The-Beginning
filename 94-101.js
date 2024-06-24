@@ -1,26 +1,26 @@
 // ! Event Simulation - Click Focus Blur
-window.onload = function () {
-	let one = document.querySelector(".one");
-	let two = document.querySelector(".two");
-	let submit = document.querySelector(".submit");
-	// تأكد من أن الحقل الأول يأخذ التركيز عند تحميل الصفحة
-	if (one) {
-		one.focus();
-	}
-	// إضافة حدث input للحقل الأول للتحقق من طول القيمة
-	one.addEventListener("input", function () {
-		// التأكد من أن القيمة تحتوي على رقم واحد فقط
-		if (one.value.length === 1) {
-			// نقل التركيز إلى الحقل الثاني
-			two.focus();
-		}
-	});
-	two.addEventListener("input", function () {
-		if (two.value.length === 1) {
-			submit.focus();
-		}
-	});
-};
+// window.onload = function () {
+// 	let one = document.querySelector(".one");
+// 	let two = document.querySelector(".two");
+// 	let submit = document.querySelector(".submit");
+// 	// تأكد من أن الحقل الأول يأخذ التركيز عند تحميل الصفحة
+// 	if (one) {
+// 		one.focus();
+// 	}
+// 	// إضافة حدث input للحقل الأول للتحقق من طول القيمة
+// 	one.addEventListener("input", function () {
+// 		// التأكد من أن القيمة تحتوي على رقم واحد فقط
+// 		if (one.value.length === 1) {
+// 			// نقل التركيز إلى الحقل الثاني
+// 			two.focus();
+// 		}
+// 	});
+// 	two.addEventListener("input", function () {
+// 		if (two.value.length === 1) {
+// 			submit.focus();
+// 		}
+// 	});
+// };
 
 // submit.addEventListener("focus", function (event) {
 // 	document.links[0].click();
@@ -48,14 +48,21 @@ window.onload = function () {
 // document.styleSheets[0].cssRules[0].style.removeProperty('line-height')
 // document.styleSheets[0].cssRules[0].style.setProperty('background-color','chocolate')
 //! Before, After, Prepend, Append, Remove
-let element = document.getElementById("my-div");
-let createedP = document.createElement("p");
-let content = (createedP.textContent = "hello");
-// element.appendChild(createedP);
-element.before("hello before");
-element.after("hello after");
-element.after(createedP);
-element.append(' hi')
-element.prepend(' hi ')
-element.remove()
-
+// let element = document.getElementById("my-div");
+// let createedP = document.createElement("p");
+// let content = (createedP.textContent = "hello");
+// // element.appendChild(createedP);
+// element.before("hello before");
+// element.after("hello after");
+// element.after(createedP);
+// element.append(' hi')
+// element.prepend(' hi ')
+// element.remove()
+//! DOM Traversing
+let span = document.querySelector(".two");
+console.log(span.nextSibling);
+console.log(span.previousSibling);
+console.log(span.previousElementSibling);
+console.log(span.nextElementSibling);
+console.log(span.parentElement)
+console.log(span.parentNode)
