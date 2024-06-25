@@ -74,31 +74,71 @@
 // myDiv.appendChild(myP);
 // console.log(myDiv);
 //! AddEventListener
-let myP = document.querySelector("p");
-console.log(myP);
-myP.onclick = function () {
-	console.log("message from onClick");
-};
-myP.onclick = one;
-myP.onclick = two;
-function one() {
-	console.log("message from onClick 1");
-}
-function two() {
-	console.log("message from onClick 2");
-}
-myP.addEventListener("click", function () {
-	console.log("message from the event");
-});
-myP.addEventListener("click", one);
-myP.addEventListener("click", two);
-myP.addEventListener("click", function () {
-	let newP = myP.cloneNode(true);
-	newP.className = "newP";
-    document.body.appendChild(newP);
-    newP.addEventListener("click", function () {
-	console.log("I am a copy");
-});
-});
+// let myP = document.querySelector("p");
+// console.log(myP);
+// myP.onclick = function () {
+// 	console.log("message from onClick");
+// };
+// myP.onclick = one;
+// myP.onclick = two;
+// function one() {
+// 	console.log("message from onClick 1");
+// }
+// function two() {
+// 	console.log("message from onClick 2");
+// }
+// myP.addEventListener("click", function () {
+// 	console.log("message from the event");
+// });
+// myP.addEventListener("click", one);
+// myP.addEventListener("click", two);
+// myP.addEventListener("click", function () {
+// 	let newP = myP.cloneNode(true);
+// 	newP.className = "newP";
+//     document.body.appendChild(newP);
+//     newP.addEventListener("click", function () {
+// 	console.log("I am a copy");
+// });
+// });
+//! DOM Challenge
+// Create and style container div
+let container = document.createElement("div");
+container.id = "container";
+container.style.display = "flex";
+document.body.prepend(container);
 
+// Create and style header div and append it to container
+let header = document.createElement("div");
+header.id = "header";
+header.style.cssText = "display: flex; justify-content: space-between; width: 100%; height: 30px";
+container.append(header);
 
+// Create logo div and append it to header
+let logo = document.createElement("div");
+logo.className = "logo";
+logo.textContent = "Elzero";
+logo.style.cssText = "color: green; font-weight: bold; align-content: center";
+header.appendChild(logo);
+
+// Create navDiv, navLinks and append them to header
+let navDiv = document.createElement("div");
+navDiv.className = "navDiv";
+header.append(navDiv);
+
+let navLinks = document.createElement("ul");
+navLinks.style.cssText = "list-style-type: none; display: flex; gap: 20px; margin:0 ";
+navDiv.append(navLinks);
+
+// Create links from linkArray and append them to navLinks
+let linkArray = ["Home", "About", "Service", "Contact"];
+linkArray.forEach((element) => {
+    let li = document.createElement("li");
+    let a = document.createElement("a");
+    a.textContent = element;
+    a.href = `#${element.toLowerCase()}`;
+    a.style.textDecoration = 'none'
+    a.style.color = 'grey'
+    a.style.fontSize= "14px"
+    li.appendChild(a);
+    navLinks.appendChild(li);
+});
