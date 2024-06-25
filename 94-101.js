@@ -168,3 +168,9 @@ for (let i = 1; i <= 15; i++) {
 		"background:white ; display:flex ;align-items: center; background: white; display: flex; flex-direction: column;";
 	main.append(productDiv);
 }
+// Add footer
+let footer = document.createElement("div");
+footer.textContent = "Copyright 2024";
+footer.style.cssText =
+	"background: rgb(21 203 100); color:white; display:flex;justify-content:center";
+container.appendChild(footer);
