@@ -5,17 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>The Beginning</title>
 		<link rel="stylesheet" href="style.css" />
+		<script>
+			//! Assignment1 94-101
+			let link = document.addEventListener("DOMContentLoaded", function () {
+				let Links = document.querySelectorAll(".open");
+				Links.forEach((link) => {
+					if (link.textContent.trim() === "Elzero") {
+						link.target = "_blank";
+						link.click();
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>
+		<a class="open" href="https://google.com">Google</a>
+		<a class="open" href="https://elzero.org">Elzero</a>
+		<a class="not" href="https://facebook.com">Facebook</a>
+		<a class="linked" href="https://linkedin.com">Elzero</a>
 		<!-- <p id="my-p" class="my-p">This is <span>P</span></p> -->
 		<!-- <div>Div</div> -->
 		<!-- <div id="my-div">
 			<span class="one">one</span>
 			<!-- comment -->
-			<!-- <span class="two">two</span> -->
-			<!-- comment -->
-			<!-- <span class="three">three</span> -->
-			<!-- comment -->
+		<!-- <span class="two">two</span> -->
+		<!-- comment -->
+		<!-- <span class="three">three</span> -->
+		<!-- comment -->
 		<!-- </div> -->
 		<!-- <form action="">
 			<input type="text" class="one" maxlength="1" />
