@@ -59,10 +59,17 @@
 // element.prepend(' hi ')
 // element.remove()
 //! DOM Traversing
-let span = document.querySelector(".two");
-console.log(span.nextSibling);
-console.log(span.previousSibling);
-console.log(span.previousElementSibling);
-console.log(span.nextElementSibling);
-console.log(span.parentElement)
-console.log(span.parentNode)
+// let span = document.querySelector(".two");
+// console.log(span.nextSibling);
+// console.log(span.previousSibling);
+// console.log(span.previousElementSibling);
+// console.log(span.nextElementSibling);
+// console.log(span.parentElement)
+// console.log(span.parentNode)
+//! DOM Cloning
+let myP = document.querySelector("p").cloneNode(true);
+console.log(myP);
+myP.id = `${myP.id}-cloned`;
+let myDiv = document.querySelector("div");
+myDiv.appendChild(myP);
+console.log(myDiv);
