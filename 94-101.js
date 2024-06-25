@@ -67,9 +67,38 @@
 // console.log(span.parentElement)
 // console.log(span.parentNode)
 //! DOM Cloning
-let myP = document.querySelector("p").cloneNode(true);
+// let myP = document.querySelector("p").cloneNode(true);
+// console.log(myP);
+// myP.id = `${myP.id}-cloned`;
+// let myDiv = document.querySelector("div");
+// myDiv.appendChild(myP);
+// console.log(myDiv);
+//! AddEventListener
+let myP = document.querySelector("p");
 console.log(myP);
-myP.id = `${myP.id}-cloned`;
-let myDiv = document.querySelector("div");
-myDiv.appendChild(myP);
-console.log(myDiv);
+myP.onclick = function () {
+	console.log("message from onClick");
+};
+myP.onclick = one;
+myP.onclick = two;
+function one() {
+	console.log("message from onClick 1");
+}
+function two() {
+	console.log("message from onClick 2");
+}
+myP.addEventListener("click", function () {
+	console.log("message from the event");
+});
+myP.addEventListener("click", one);
+myP.addEventListener("click", two);
+myP.addEventListener("click", function () {
+	let newP = myP.cloneNode(true);
+	newP.className = "newP";
+    document.body.appendChild(newP);
+    newP.addEventListener("click", function () {
+	console.log("I am a copy");
+});
+});
+
+
