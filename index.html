@@ -5,24 +5,67 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>The Beginning</title>
 		<link rel="stylesheet" href="style.css" />
-		<script>
-			//! Assignment1 94-101
-			let link = document.addEventListener("DOMContentLoaded", function () {
-				let Links = document.querySelectorAll(".open");
-				Links.forEach((link) => {
-					if (link.textContent.trim() === "Elzero") {
-						link.target = "_blank";
-						link.click();
-					}
-				});
-			});
-		</script>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.assign {
+				text-align: center;
+				padding-top: 20px;
+			}
+			.assign input {
+				padding: 10px;
+				width: 300px;
+				border: 1px solid #ddd;
+			}
+			.assign input:focus {
+				outline: none;
+				border-color: #ccc;
+			}
+			.assign [title="Current"] {
+				padding: 20px;
+				margin: 10px auto;
+				width: 610px;
+				background-color: #f1f0f0;
+			}
+			.assign .classes-list {
+				padding: 20px;
+				margin: 10px auto;
+				width: 610px;
+				background-color: #f1f0f0;
+			}
+			.assign .classes-list h5 {
+				margin: 0 0 10px;
+				text-align: left;
+			}
+			.assign .classes-list div span {
+				background-color: #ff5722;
+				padding: 6px 10px 8px;
+				margin-right: 5px;
+				border-radius: 6px;
+				color: white;
+				display: inline-flex;
+			}
+		</style>
 	</head>
 	<body>
+		<div class="assign">
+			<input type="text" class="classes-to-add" placeholder="Add Classes" />
+			<input
+				type="text"
+				class="classes-to-remove"
+				placeholder="Remove Classes" />
+			<div class="element current" title="Current">Current Element</div>
+			<div class="classes-list">
+				<h5>Current Element Class Lists</h5>
+				<div class="output"></div>
+			</div>
+		</div>
+		<!-- 	
 		<a class="open" href="https://google.com">Google</a>
 		<a class="open" href="https://elzero.org">Elzero</a>
 		<a class="not" href="https://facebook.com">Facebook</a>
-		<a class="linked" href="https://linkedin.com">Elzero</a>
+		<a class="linked" href="https://linkedin.com">Elzero</a> -->
 		<!-- <p id="my-p" class="my-p">This is <span>P</span></p> -->
 		<!-- <div>Div</div> -->
 		<!-- <div id="my-div">
@@ -140,6 +183,6 @@
 		<!-- <script src="nestedObject.js"></script> -->
 		<!-- <script src="86-89.js"></script> -->
 		<!-- <script src="90-93.js"></script> -->
-		<script src="94-101.js"></script>
+		<script src="94-101-assignments.js"></script>
 	</body>
 </html>

@@ -101,76 +101,76 @@
 // });
 // });
 //! DOM Challenge
-document.body.style.cssText = "font-family: sans-serif;";
-// Create and style container div
-let container = document.createElement("div");
-container.id = "container";
-// container.style.display = "flex";
-document.body.prepend(container);
+// document.body.style.cssText = "font-family: sans-serif;";
+// // Create and style container div
+// let container = document.createElement("div");
+// container.id = "container";
+// // container.style.display = "flex";
+// document.body.prepend(container);
 
-// Create and style header div and append it to container
-let header = document.createElement("div");
-header.id = "header";
-header.style.cssText =
-	"display: flex; justify-content: space-between; width: 100%; padding-bottom: 5px; ";
-container.append(header);
+// // Create and style header div and append it to container
+// let header = document.createElement("div");
+// header.id = "header";
+// header.style.cssText =
+// 	"display: flex; justify-content: space-between; width: 100%; padding-bottom: 5px; ";
+// container.append(header);
 
-// Create logo div and append it to header
-let logo = document.createElement("div");
-logo.className = "logo";
-logo.textContent = "Elzero";
-logo.style.cssText =
-	"color: rgb(21 203 100); font-weight: bold; align-content: center";
-header.appendChild(logo);
+// // Create logo div and append it to header
+// let logo = document.createElement("div");
+// logo.className = "logo";
+// logo.textContent = "Elzero";
+// logo.style.cssText =
+// 	"color: rgb(21 203 100); font-weight: bold; align-content: center";
+// header.appendChild(logo);
 
-// Create navDiv, navLinks and append them to header
-let navDiv = document.createElement("div");
-navDiv.className = "navDiv";
-header.append(navDiv);
+// // Create navDiv, navLinks and append them to header
+// let navDiv = document.createElement("div");
+// navDiv.className = "navDiv";
+// header.append(navDiv);
 
-let navLinks = document.createElement("ul");
-navLinks.style.cssText =
-	"list-style-type: none; display: flex; gap: 20px; margin:0 ";
-navDiv.append(navLinks);
+// let navLinks = document.createElement("ul");
+// navLinks.style.cssText =
+// 	"list-style-type: none; display: flex; gap: 20px; margin:0 ";
+// navDiv.append(navLinks);
 
-// Create links from linkArray and append them to navLinks
-let linkArray = ["Home", "About", "Service", "Contact"];
-linkArray.forEach((element) => {
-	let li = document.createElement("li");
-	let a = document.createElement("a");
-	a.textContent = element;
-	a.href = `#${element.toLowerCase()}`;
-	a.style.textDecoration = "none";
-	a.style.color = "grey";
-	a.style.fontSize = "14px";
-	li.appendChild(a);
-	navLinks.appendChild(li);
-});
-// create main section
-let main = document.createElement("div");
-main.id = "main";
-main.style.cssText =
-	"display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: repeat(5, 1fr); gap: 15px; background: rgb(243, 243, 242); padding: 10px";
-container.append(main);
-for (let i = 1; i <= 15; i++) {
-	let productDiv = document.createElement("div");
-	productDiv.style.cssText =
-		"background: white; display: flex; justify-content: center; align-items: center;";
-	let productCount = document.createElement("span");
-	productCount.style.cssText = "font-size: 25px;font-weight:bold";
-	productCount.textContent = i;
-	let ProductText = document.createElement("span");
-	ProductText.textContent = "Product";
-	ProductText.style.cssText = "color:grey;font-size: 14px;font-weight:bold  ";
-	productDiv.appendChild(productCount);
-	productDiv.appendChild(ProductText);
-	productDiv.style.cssText =
-		"background:white ; display:flex ;align-items: center; background: white; display: flex; flex-direction: column;";
-	main.append(productDiv);
-}
-// Add footer
-let footer = document.createElement("div");
-footer.textContent = "Copyright 2024";
-footer.style.cssText =
-	"background: rgb(21 203 100); color:white; display:flex;justify-content:center";
-container.appendChild(footer);
+// // Create links from linkArray and append them to navLinks
+// let linkArray = ["Home", "About", "Service", "Contact"];
+// linkArray.forEach((element) => {
+// 	let li = document.createElement("li");
+// 	let a = document.createElement("a");
+// 	a.textContent = element;
+// 	a.href = `#${element.toLowerCase()}`;
+// 	a.style.textDecoration = "none";
+// 	a.style.color = "grey";
+// 	a.style.fontSize = "14px";
+// 	li.appendChild(a);
+// 	navLinks.appendChild(li);
+// });
+// // create main section
+// let main = document.createElement("div");
+// main.id = "main";
+// main.style.cssText =
+// 	"display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: repeat(5, 1fr); gap: 15px; background: rgb(243, 243, 242); padding: 10px";
+// container.append(main);
+// for (let i = 1; i <= 15; i++) {
+// 	let productDiv = document.createElement("div");
+// 	productDiv.style.cssText =
+// 		"background: white; display: flex; justify-content: center; align-items: center;";
+// 	let productCount = document.createElement("span");
+// 	productCount.style.cssText = "font-size: 25px;font-weight:bold";
+// 	productCount.textContent = i;
+// 	let ProductText = document.createElement("span");
+// 	ProductText.textContent = "Product";
+// 	ProductText.style.cssText = "color:grey;font-size: 14px;font-weight:bold  ";
+// 	productDiv.appendChild(productCount);
+// 	productDiv.appendChild(ProductText);
+// 	productDiv.style.cssText =
+// 		"background:white ; display:flex ;align-items: center; background: white; display: flex; flex-direction: column;";
+// 	main.append(productDiv);
+// }
+// // Add footer
+// let footer = document.createElement("div");
+// footer.textContent = "Copyright 2024";
+// footer.style.cssText =
+// 	"background: rgb(21 203 100); color:white; display:flex;justify-content:center";
+// container.appendChild(footer);
