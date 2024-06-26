@@ -67,14 +67,21 @@
 // nextDiv.textContent = "End";
 // document.body.prepend(previousDiv, theDiv, nextDiv);
 //! Assignment 4
-let div = document.querySelector("div");
-let span = document.querySelector("span");
+// let div = document.querySelector("div");
+// let span = document.querySelector("span");
 
-let comment = span.nextSibling;
-let comment2 = comment.nextSibling;
-let string = comment2.nextSibling;
-let theString = string.textContent.trim();
+// let comment = span.nextSibling;
+// let comment2 = comment.nextSibling;
+// let string = comment2.nextSibling;
+// let theString = string.textContent.trim();
 
-span.remove();
-comment.remove();
-comment2.remove();
+// span.remove();
+// comment.remove();
+// comment2.remove();
+//! Assignment 5
+const elements = document.querySelectorAll("div, span, p, articel, section");
+elements.forEach((element) => {
+	element.addEventListener("click", function () {
+		console.log(`This is ${element.tagName.toLocaleLowerCase()}`);
+	});
+});
