@@ -51,18 +51,30 @@
 <div class="our-element">Our Element</div>
 <div class="end" title="End Element" data-value="End">End</div> */
 }
-document.querySelector("p").remove();
-let theDiv = document.querySelector(".our-element");
-let previousDiv = document.createElement("div");
-previousDiv.className = "start";
-previousDiv.title = "Start Element";
-previousDiv.setAttribute("data-value", "start");
-previousDiv.textContent = "Start";
-console.log(previousDiv);
-// document.body.prepend(previousDiv)
-let nextDiv = document.createElement("div");
-nextDiv.className = "end";
-nextDiv.title = "End Element";
-nextDiv.setAttribute("data-value", "End");
-nextDiv.textContent = "End";
-document.body.prepend(previousDiv, theDiv, nextDiv);
+// document.querySelector("p").remove();
+// let theDiv = document.querySelector(".our-element");
+// let previousDiv = document.createElement("div");
+// previousDiv.className = "start";
+// previousDiv.title = "Start Element";
+// previousDiv.setAttribute("data-value", "start");
+// previousDiv.textContent = "Start";
+// console.log(previousDiv);
+// // document.body.prepend(previousDiv)
+// let nextDiv = document.createElement("div");
+// nextDiv.className = "end";
+// nextDiv.title = "End Element";
+// nextDiv.setAttribute("data-value", "End");
+// nextDiv.textContent = "End";
+// document.body.prepend(previousDiv, theDiv, nextDiv);
+//! Assignment 4
+let div = document.querySelector("div");
+let span = document.querySelector("span");
+
+let comment = span.nextSibling;
+let comment2 = comment.nextSibling;
+let string = comment2.nextSibling;
+let theString = string.textContent.trim();
+
+span.remove();
+comment.remove();
+comment2.remove();
