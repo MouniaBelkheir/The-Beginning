@@ -3,9 +3,52 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>The Beginning</title>
 		<link rel="stylesheet" href="style.css" />
+		<title>The Beginning</title>
+	</head>
+	<body>
+		<div></div>
 		<style>
+			body {
+				background: #edaf38;
+			}
+			div {
+				width: 300px;
+				height: 150px;
+				background: #ffffff;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%);
+				border-top-left-radius: 150px;
+				border-top-right-radius: 150px;
+				background: linear-gradient(
+					to right,
+					#ea7457 50%,
+					white 50%,
+					white 100%
+				);
+			}
+			div::before {
+				content: "";
+				width: 200px;
+				height: 100px;
+				position: absolute;
+				border-top-left-radius: 150px;
+				border-top-right-radius: 150px;
+				background: linear-gradient(
+					to right,
+					white 50%,
+					#ea7457 50%,
+					#ea7457 100%
+				);
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%);
+			}
+		</style>
+		<!-- <div>5</div> -->
+		<!-- <style>
 			body {
 				font-family: Arial, Helvetica, sans-serif;
 			}
@@ -53,7 +96,7 @@
 		<span>Element</span>
 		<p>Element</p>
 		<article>Element</article>
-		<section>Element</section>
+		<section>Element</section> -->
 		<!-- <div>
 			<span>Hello</span>
 			<!-- We Need The Next Text Without Spaces -->
@@ -181,6 +224,7 @@
 			</div>
 			<button id="cl">Click</button>
 		</div> -->
+		<!-- <a href="learnHTML.html">HTML</a> -->
 		<!-- <script src="index.js"></script> -->
 		<!-- <script src="33-37.js"></script> -->
 		<!-- <script src="38-39.js"></script> -->
@@ -195,6 +239,7 @@
 		<!-- <script src="nestedObject.js"></script> -->
 		<!-- <script src="86-89.js"></script> -->
 		<!-- <script src="90-93.js"></script> -->
-		<script src="94-101-assignments.js"></script>
+		<!-- <script src="94-101-assignments.js"></script> -->
+		<!-- <script src="102-110.js"></script> -->
 	</body>
 </html>

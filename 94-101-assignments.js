@@ -79,9 +79,9 @@
 // comment.remove();
 // comment2.remove();
 //! Assignment 5
-const elements = document.querySelectorAll("div, span, p, articel, section");
-elements.forEach((element) => {
-	element.addEventListener("click", function () {
-		console.log(`This is ${element.tagName.toLocaleLowerCase()}`);
-	});
-});
+// const elements = document.querySelectorAll("div, span, p, articel, section");
+// elements.forEach((element) => {
+// 	element.addEventListener("click", function () {
+// 		console.log(`This is ${element.tagName.toLocaleLowerCase()}`);
+// 	});
+// });
