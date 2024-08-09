@@ -47,13 +47,25 @@
 // 	button.addEventListener("click", () => div.remove());
 // }
 // ! Assignment 3
+// let div = document.createElement("div");
+// document.body.prepend(div);
+// div.textContent = 10;
+// function count() {
+// 	div.innerHTML -= 1;
+// 	if (div.innerHTML === "0") {
+// 		clearInterval(counter);
+// 	}
+// }
+// let counter = setInterval(count, 1000);
+// ! Assignment 4
 let div = document.createElement("div");
 document.body.prepend(div);
 div.textContent = 10;
 function count() {
-	div.innerHTML -= 1;
-	if (div.innerHTML === "0") {
+	div.textContent -= 1;
+	if (div.textContent === "0") {
 		clearInterval(counter);
+		location.replace("https://elzero.org/");
 	}
 }
 let counter = setInterval(count, 1000);
