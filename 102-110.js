@@ -58,14 +58,32 @@
 // }
 // let counter = setInterval(count, 1000);
 // ! Assignment 4
+// let div = document.createElement("div");
+// document.body.prepend(div);
+// div.textContent = 10;
+// function count() {
+// 	div.textContent -= 1;
+// 	if (div.textContent === "0") {
+// 		clearInterval(counter);
+// 		location.replace("https://elzero.org/");
+// 	}
+// }
+// let counter = setInterval(count, 1000);
+// ! Assignment 5
 let div = document.createElement("div");
 document.body.prepend(div);
 div.textContent = 10;
 function count() {
 	div.textContent -= 1;
+	if (div.textContent === "5") {
+		window.open(
+			"https://elzero.org/",
+			"_blank",
+			"width=400,height=400,left=200,top=10"
+		);
+	}
 	if (div.textContent === "0") {
 		clearInterval(counter);
-		location.replace("https://elzero.org/");
 	}
 }
 let counter = setInterval(count, 1000);
